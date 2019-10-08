@@ -1,0 +1,154 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border:0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Lato", sans-serif;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+li {
+	list-style: none;
+}
+
+#navbar{
+	background-color: #333;
+	width: 100%;
+	position: fixed;
+	top: 0%;
+	left: 0px;
+	transition: top 0.5s ease;
+	padding-left: 250px;
+}
+#navbar a{
+	display: inline-block;
+	float: left;
+	background-color: #333;
+	color: #818181;
+	height: 60px;
+	font-size: 25px;
+	line-height: 60px;
+	padding: 0px 30px;
+	transition: font-size 0.1s ease;
+	transition: color 0.5 ease;
+}
+#navbar a:hover{
+	font-size: 30px;
+	color: #ffffff; 
+}
+#main{
+	background-color: #ddd;
+	width: 100%;
+	padding: 105px 0px 0px 40px;
+	height: 3000px;
+	transition: margin-left .5s;
+ }
+
+/*-----------------------------------------------------*/
+
+#sideNav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+#sideNav::-webkit-scrollbar {
+  width: 6px;
+}
+
+#sideNav::-webkit-scrollbar-track {
+  background: #111;
+}
+
+#sideNav::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+#sideNav::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#sideNav >ul >li >a {
+  padding: 10px 8px 10px 32px;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: color 0.3s , font-size 0.1s;
+}
+
+#sideNav a:hover {
+  color: #f1f1f1;
+  font-size: 25px;
+}
+#sideNav >div{
+	width: 100%;
+	height: 60px;
+}
+#sideNav span{
+	color: #818181;
+	font-size: 45px;
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}
+#sideNav span:hover {
+  color: #f1f1f1;
+}
+.dropDownContainer {
+	display: none;
+}
+.dropDownContainer a{
+	background-color: #5F5F5F;
+	color: black ;
+	padding: 10px 8px 10px 32px;
+	height: 60px;
+	line-height: 60px;
+	text-decoration: none;
+	font-size: 18px;
+    display: block;
+	transition: color 0.3s , font-size 0.1s;
+}
+#maskClose{
+	width: 0;
+	height:2000px;
+	background-color: transparent;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	z-index: 2;
+	cursor: pointer;
+	transition: background-color 0.5s;
+
+}
+#dr >a{
+	position: relative;
+}
+.dropbtn{
+	display: block;
+	width: 1px;
+	height: 1px;
+	border-top: 8px solid #818181;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	position: absolute;
+	top :32px;
+	right: 30px;
+}
+.active{
+	background-color: green;
+    color: black;
+}
